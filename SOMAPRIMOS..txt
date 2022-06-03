@@ -1,0 +1,50 @@
+Algoritmo "somaprimos"
+// Disciplina   : [Desvendando a caixa preta]
+// Professor   : Andre Przerwodowski Filho
+// Descrição   : Apresenta e soma os números primos menores ou iguais a N.
+// Autor(a)    : Florence Gonçalves
+// Data atual  : 30/05/2022
+Var
+
+Cont, i, j, n, s:inteiro
+
+
+Inicio
+
+Mudacor("Amarelo", "frente")
+Escreval("Digite um número 'N'para ver e somar os números primos até 'N':")
+leia(n)
+Mudacor("Verde", "frente")
+
+Cont <- 0
+i <-2
+j <-1
+s <-0
+
+enquanto i <= n faca
+         enquanto j <= i faca
+                  se((i mod j) = 0) entao
+                     cont <- cont + 1
+                  fimse
+
+         j <- j + 1
+         fimenquanto
+
+         se (cont = 2) então
+            escreval
+            escreval("O número ", i, " é primo")
+            escreval
+            s <- s + i
+
+         fimse
+
+         i <- i +1
+         j <- 1
+         cont <- 0
+fimenquanto
+
+escreva("A soma dos números primos é igual a: ")
+escreval (s)
+escreval
+
+Fimalgoritmo
