@@ -1,8 +1,8 @@
 Algoritmo "somaprimos"
 // Disciplina   : [Desvendando a caixa preta]
 // Professor   : Andre Przerwodowski Filho
-// Descrição   : Apresenta e soma os números primos menores ou iguais a N.
-// Autor(a)    : Florence Gonçalves
+// Descriï¿½ï¿½o   : Apresenta e soma os nï¿½meros primos menores ou iguais a N.
+// Autor(a)    : Florence Gonï¿½alves
 // Data atual  : 30/05/2022
 Var
 
@@ -12,7 +12,7 @@ Cont, i, j, n, s:inteiro
 Inicio
 
 Mudacor("Amarelo", "frente")
-Escreval("Digite um número 'N'para ver e somar os números primos até 'N':")
+Escreval("Digite um nï¿½mero 'N'para ver e somar os nï¿½meros primos atï¿½ 'N':")
 leia(n)
 Mudacor("Verde", "frente")
 
@@ -30,9 +30,9 @@ enquanto i <= n faca
          j <- j + 1
          fimenquanto
 
-         se (cont = 2) então
+         se (cont = 2) entï¿½o
             escreval
-            escreval("O número ", i, " é primo")
+            escreval("O nï¿½mero ", i, " ï¿½ primo")
             escreval
             s <- s + i
 
@@ -43,7 +43,7 @@ enquanto i <= n faca
          cont <- 0
 fimenquanto
 
-escreva("A soma dos números primos é igual a: ")
+escreva("A soma dos nï¿½meros primos ï¿½ igual a: ")
 escreval (s)
 escreval
 
