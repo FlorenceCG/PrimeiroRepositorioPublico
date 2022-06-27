@@ -6,10 +6,12 @@ def conversor_decimal_binario(decimal):
     return binario[::-1]
 
 
-try:
-    n_decimal = eval(input("Digite um número: "))
+n_decimal = (input("Digite um número: "))
+if n_decimal.isnumeric():
+    n_decimal = int(n_decimal)
+
     print('Número na base binária: ', n_decimal)
     print(("Conversão para a base binária: " + conversor_decimal_binario(n_decimal)))
 
-except:
-    print('Entre com um valor numérico. ')
+else:
+    exit('Entre com um valor numérico inteiro. ')
